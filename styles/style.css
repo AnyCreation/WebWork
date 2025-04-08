@@ -5,7 +5,18 @@ body {
 main {
   display: flex;
 }
-main * {
+main div {
   margin: 10px;
-  border: 2px solid black;
+  border: 3px solid black;
+  border-radius: 6px;
+}
+main #Tomato {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+main #List {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
 }
