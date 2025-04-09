@@ -10,6 +10,7 @@ if (localStorage.getItem("list") != null) { // if "list" not empty so add user's
 
 
 // to Do List
+
 function UpdateButtonCheckList() {
     toDo = document.getElementsByClassName("toDo");
     for (i of toDo) {

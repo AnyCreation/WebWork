@@ -17,10 +17,6 @@ main div {
   border-radius: 6px;
   background-color: #ecf7ff;
 }
-main .Un {
-  width: 30vw;
-  height: 90vh;
-}
 main #PLan {
   width: 30vw;
   height: 90vh;
@@ -103,11 +99,4 @@ main #PLan #Add #AddTast {
 }
 main #PLan #Add #AddTast:hover {
   background-color: #ffffff;
-}
-main #Tomato {
-  width: 30vw;
-  height: 90vh;
-  display: flex;
-  flex-direction: column;
-  padding: 10px;
 }
