@@ -1,26 +1,121 @@
 body {
     background-color: rgba(48, 190, 43, 0.151);
     font-size: 50px;
+    font-family: Century Gothic;
+    margin: 0px;
 }
 
+.change {
+    background-color: aqua;
+}
+
+@Color: rgb(236, 247, 255);
 main {
     display: flex;
+    justify-content: center;
 
-    div {
+    div { // Border for, almost, all div
         margin: 10px;
         border: 3px solid black;
         border-radius: 6px;
+        
+        background-color: @Color;
     }
+
+
+    
+    .Un {
+        width: 30vw;
+        height: 90vh;
+    }
+
+    #PLan {
+        .Un;
+
+        // Header
+        #timerPlace {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        // Center
+        #List {
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+            margin-bottom: 0px;
+    
+            font-size: 35px;
+    
+            div { // Task - Check and Test
+                display: flex;
+                align-items: center;
+
+                margin: 0px;
+                border-width: 0px;    
+
+                transition: font-size 1s ease;
+                transform-origin: left;
+                &:hover {
+                    font-size: 43px;
+                }
+                
+                .toDo {
+                    background-color: rgb(243, 228, 209);
+                    height: 22px;
+                    width: 22px;
+    
+                    margin-right: 5px;
+                    margin-left: 5px;
+    
+                    border: 2px solid black;
+                    border-radius: 4px;
+                }
+    
+                span {
+                    -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;
+                }
+            }
+        }
+
+        // Botten
+        #Add {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            height: 7%;
+            #NewTask { // input
+                height: 50%;
+                margin: 6px;
+
+                font-family: Century Gothic;
+                font-size: 20px;
+                text-align: center;
+
+                border: 2px solid black;
+                border-radius: 6px;
+
+                background-color: @Color;
+            }
+
+            #AddTast { // button
+                width: 16%;
+                #NewTask;
+                transition: background-color 0.5s ease;
+                &:hover {background-color: lighten(@Color, 10%);}
+            }
+        }
+
+    }
+
+
 
     #Tomato {
+        .Un;
         display: flex;
         flex-direction: column;
         padding: 10px;
     }
 
-    #List {
-        display: flex;
-        flex-direction: column;
-        padding: 10px;
-    }
 }

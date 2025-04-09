@@ -1,21 +1,103 @@
 body {
   background-color: rgba(48, 190, 43, 0.151);
   font-size: 50px;
+  font-family: Century Gothic;
+  margin: 0px;
+}
+.change {
+  background-color: aqua;
 }
 main {
   display: flex;
+  justify-content: center;
 }
 main div {
   margin: 10px;
   border: 3px solid black;
   border-radius: 6px;
+  background-color: #ecf7ff;
 }
-main #Tomato {
+main .Un {
+  width: 30vw;
+  height: 90vh;
+}
+main #PLan {
+  width: 30vw;
+  height: 90vh;
+}
+main #PLan #timerPlace {
+  display: flex;
+  justify-content: space-evenly;
+}
+main #PLan #List {
   display: flex;
   flex-direction: column;
   padding: 10px;
+  margin-bottom: 0px;
+  font-size: 35px;
 }
-main #List {
+main #PLan #List div {
+  display: flex;
+  align-items: center;
+  margin: 0px;
+  border-width: 0px;
+  transition: font-size 1s ease;
+  transform-origin: left;
+}
+main #PLan #List div:hover {
+  font-size: 43px;
+}
+main #PLan #List div .toDo {
+  background-color: #f3e4d1;
+  height: 22px;
+  width: 22px;
+  margin-right: 5px;
+  margin-left: 5px;
+  border: 2px solid black;
+  border-radius: 4px;
+}
+main #PLan #List div span {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+main #PLan #Add {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 7%;
+}
+main #PLan #Add #NewTask {
+  height: 50%;
+  margin: 6px;
+  font-family: Century Gothic;
+  font-size: 20px;
+  text-align: center;
+  border: 2px solid black;
+  border-radius: 6px;
+  background-color: #ecf7ff;
+}
+main #PLan #Add #AddTast {
+  width: 16%;
+  height: 50%;
+  margin: 6px;
+  font-family: Century Gothic;
+  font-size: 20px;
+  text-align: center;
+  border: 2px solid black;
+  border-radius: 6px;
+  background-color: #ecf7ff;
+  transition: background-color 0.5s ease;
+}
+main #PLan #Add #AddTast:hover {
+  background-color: #ffffff;
+}
+main #Tomato {
+  width: 30vw;
+  height: 90vh;
   display: flex;
   flex-direction: column;
   padding: 10px;
