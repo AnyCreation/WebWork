@@ -76,17 +76,13 @@ document.getElementById("AddTast").addEventListener("click", function() {
 
 
 function Update() {
-
     // Update the clock
     d = new Date();
     Clock.innerHTML = d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds();
-    setInterval(Update, 1000)
-
-    
 }
-Update()
+setInterval(Update, 1000)
 
-// ---
+// ---tomato
 
 // 1 min - one "\"
 
@@ -108,18 +104,13 @@ addTime.addEventListener("click", function() {
 
 /// Start |------------------------------------------------
 const start = document.getElementById("Start");
-let index = 0;
 start.addEventListener("click", function() {
-    S();
+    setInterval(S, 1000);
 })
 
 function S() {
-    let All = document.getElementsByClassName("timePlace");
-    let last = parseInt(All[All.length - 1].id.split("_")[1]);
-    let Now = 0;
-
+    console.log("--step---")
     let Real = document.getElementById(`T_0`)
     Real.setAttribute("style", `width: ${parseInt(getComputedStyle(Real).width) - 1}px`)
-    setTimeout(S, 1000)
 }
 
