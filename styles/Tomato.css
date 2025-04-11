@@ -9,13 +9,13 @@
 #Tomato {
   display: flex;
   flex-direction: column;
-  width: 30vw;
+  width: 50vw;
   height: 90vh;
 }
 #Tomato #Work {
   display: flex;
   flex-direction: column;
-  min-height: 15vh;
+  min-height: 30vh;
   font-family: Century Gothic;
   padding: 5px;
   -webkit-touch-callout: none;
@@ -35,11 +35,13 @@
   width: 90%;
   height: 50px;
   margin: 0px;
+  margin-left: 10px;
 }
 #Tomato #Work .Land .working {
   width: 90%;
   height: 50px;
   margin: 0px;
+  margin-left: 10px;
   background: #bcf8a9;
   border: 3px solid #267e0a;
 }
@@ -47,6 +49,7 @@
   width: 90%;
   height: 50px;
   margin: 0px;
+  margin-left: 10px;
   background: #ffb787;
   border: 3px solid #6d2c00;
 }

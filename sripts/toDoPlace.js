@@ -24,7 +24,7 @@ function UpdateButtonCheckList() {
         task.addEventListener("click", Check)
 
         function Check() {
-            if (But.getAttribute("style") == "background-color: rgb(94, 222, 30);") {
+            if (But.getAttribute("style") === "background-color: rgb(94, 222, 30);") {
                 But.setAttribute('style', "background-color: rgb(243, 228, 209);");
                 task.setAttribute('style', "text-decoration-line: none; ");
             } else {
