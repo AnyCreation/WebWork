@@ -1,4 +1,113 @@
 #Tomato {
   display: flex;
   flex-direction: column;
+  width: 30vw;
+  height: 90vh;
+}
+#Tomato #Work {
+  display: flex;
+  flex-direction: column;
+  min-height: 15vh;
+  font-family: Century Gothic;
+  padding: 5px;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+#Tomato #Work .Land {
+  display: flex;
+  flex-direction: row;
+  border: 0px;
+  align-items: center;
+}
+#Tomato #Work .Land #timing {
+  width: 90%;
+  height: 50px;
+}
+#Tomato #Work .Land .working {
+  width: 90%;
+  height: 50px;
+  background: #bcf8a9;
+  border: 3px solid #267e0a;
+}
+#Tomato #Work .Land .relax {
+  width: 90%;
+  height: 50px;
+  background: #ffb787;
+  border: 3px solid #6d2c00;
+}
+#Tomato #Work .Land .take {
+  font-size: 40px;
+}
+#Tomato #UI {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  padding: 8px;
+}
+#Tomato #UI .un {
+  font-family: Century Gothic;
+  background-color: #ecf7ff;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+#Tomato #UI #time {
+  font-size: 20px;
+  width: 120px;
+  font-family: Century Gothic;
+  background-color: #ecf7ff;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+#Tomato #UI #option {
+  font-size: 20px;
+  font-family: Century Gothic;
+  background-color: #ecf7ff;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+#Tomato #UI #addTime {
+  font-size: 20px;
+  font-family: Century Gothic;
+  background-color: #ecf7ff;
+  border: 2px solid black;
+  border-radius: 5px;
+  transition: background-color 0.5s ease;
+}
+#Tomato #UI #addTime:hover {
+  background-color: #ffffff;
+}
+#Tomato #play {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  padding: 8px;
+  height: 25px;
+  padding: 10px;
+  padding-top: 5px;
+}
+#Tomato #play button {
+  background-color: #ecf7ff;
+  font-family: Century Gothic;
+  font-size: 20px;
+  width: 30%;
+  height: 30px;
+  margin: 0px;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+#Tomato #play #Start {
+  transition: background-color 0.5s ease;
+}
+#Tomato #play #Start:hover {
+  background-color: #b0ff82;
+}
+#Tomato #play #Stop {
+  transition: background-color 0.5s ease;
+}
+#Tomato #play #Stop:hover {
+  background-color: #ffa8a8;
 }

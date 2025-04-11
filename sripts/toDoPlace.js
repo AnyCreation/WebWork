@@ -1,5 +1,7 @@
-const Clock = document.getElementById("timer")
+const Clock = document.getElementById("timer");
+const milo = document.getElementById("milo");
 let list = document.getElementById("List");
+
 
 let toDo = document.getElementsByClassName("toDo");
 var d = new Date();
@@ -78,8 +80,46 @@ function Update() {
     // Update the clock
     d = new Date();
     Clock.innerHTML = d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds();
-    setTimeout(Update, 1000)
+    setInterval(Update, 1000)
 
+    
 }
 Update()
+
+// ---
+
+// 1 min - one "\"
+
+/// Add line |------------------------------------------------
+
+const minS = document.getElementById("time");
+const addTime = document.getElementById("addTime");
+const select = document.getElementById("option");
+const place = document.getElementById("Work");
+
+let All = document.getElementsByClassName("timePlace")
+addTime.addEventListener("click", function() {
+    place.innerHTML += `<div class="Land">
+                        <span class="take">${parseInt(minS.value)}</span>
+                        <div class="timePlace ${select.value}" style="width: ${60 * parseInt(minS.value)}px" id="T_${All.length}"></div>
+                        </div>`
+});
+
+
+/// Start |------------------------------------------------
+const start = document.getElementById("Start");
+let index = 0;
+start.addEventListener("click", function() {
+    S();
+})
+
+function S() {
+    let All = document.getElementsByClassName("timePlace");
+    let last = parseInt(All[All.length - 1].id.split("_")[1]);
+    let Now = 0;
+
+    let Real = document.getElementById(`T_0`)
+    Real.setAttribute("style", `width: ${parseInt(getComputedStyle(Real).width) - 1}px`)
+    setTimeout(S, 1000)
+}
 

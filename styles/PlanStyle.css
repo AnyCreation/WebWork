@@ -23,7 +23,8 @@ main #PLan {
 }
 main #PLan #timerPlace {
   display: flex;
-  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
 }
 main #PLan #List {
   display: flex;

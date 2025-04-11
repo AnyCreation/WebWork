@@ -1,4 +1,118 @@
 #Tomato {
     display: flex;
     flex-direction: column;
+    width: 30vw;
+    height: 90vh;
+
+    #Work {
+        display: flex;
+        flex-direction: column;
+
+        min-height: 15vh;
+        font-family: Century Gothic;
+        padding: 5px;
+
+        .Land {
+            display: flex;
+            flex-direction: row;
+            border: 0px;
+            align-items: center;
+
+
+            #timing {
+                width: 90%;
+                height: 50px;
+            }
+    
+            .working {
+                #timing;
+                background: #bcf8a9;
+                border: 3px solid darken(#bcf8a9, 55%);
+            }
+    
+            .relax {
+                #timing;
+                background: rgb(255, 183, 135);
+                border: 3px solid darken(rgb(255, 183, 135), 55%);
+    
+            }
+    
+            .take {
+                font-size: 40px;
+            }
+        }
+
+        -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;
+    }
+
+
+    #UI {
+        display: flex;
+        justify-content: center;
+        gap: 25px;
+        padding: 8px;
+
+        .un {
+            font-family: Century Gothic;
+
+            background-color: rgb(236, 247, 255);
+
+            border: 2px solid black;
+            border-radius: 5px;
+        }
+
+        #time {
+            font-size: 20px;
+            width: 120px;
+            
+            .un;
+        }
+
+        #option {
+            font-size: 20px;
+            .un;
+        }
+
+        #addTime {
+            font-size: 20px;
+            .un;
+
+            transition: background-color 0.5s ease;
+            &:hover {background-color: lighten(rgb(236, 247, 255), 10%);}
+        }
+    }
+
+    #play {
+        display: flex;
+        justify-content: center;
+        gap: 25px;
+        padding: 8px;
+
+        height: 25px;
+        padding: 10px;
+        padding-top: 5px;
+        
+        button {
+            background-color: rgb(236, 247, 255);
+            
+            font-family: Century Gothic;
+            font-size: 20px;
+            width: 30%;
+            height: 30px;
+            margin: 0px;
+
+            border: 2px solid black;
+            border-radius: 5px;
+        }
+
+        #Start {
+            transition: background-color 0.5s ease;
+            &:hover {background-color: rgb(176, 255, 130);}
+        }
+
+        #Stop {
+            transition: background-color 0.5s ease;
+            &:hover {background-color: rgb(255, 168, 168);}
+        }
+    }
 }
