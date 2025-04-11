@@ -55,12 +55,6 @@ main #PLan #List div .toDo {
 }
 main #PLan #List div span {
   margin-left: 10px;
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
 }
 main #PLan #List div .delete {
   background-color: #f3d1d1;

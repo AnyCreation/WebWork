@@ -81,36 +81,3 @@ function Update() {
     Clock.innerHTML = d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds();
 }
 setInterval(Update, 1000)
-
-// ---tomato
-
-// 1 min - one "\"
-
-/// Add line |------------------------------------------------
-
-const minS = document.getElementById("time");
-const addTime = document.getElementById("addTime");
-const select = document.getElementById("option");
-const place = document.getElementById("Work");
-
-let All = document.getElementsByClassName("timePlace")
-addTime.addEventListener("click", function() {
-    place.innerHTML += `<div class="Land">
-                        <span class="take">${parseInt(minS.value)}</span>
-                        <div class="timePlace ${select.value}" style="width: ${60 * parseInt(minS.value)}px" id="T_${All.length}"></div>
-                        </div>`
-});
-
-
-/// Start |------------------------------------------------
-const start = document.getElementById("Start");
-start.addEventListener("click", function() {
-    setInterval(S, 1000);
-})
-
-function S() {
-    console.log("--step---")
-    let Real = document.getElementById(`T_0`)
-    Real.setAttribute("style", `width: ${parseInt(getComputedStyle(Real).width) - 1}px`)
-}
-
