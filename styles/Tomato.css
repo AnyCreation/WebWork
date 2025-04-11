@@ -34,16 +34,19 @@
 #Tomato #Work .Land #timing {
   width: 90%;
   height: 50px;
+  margin: 0px;
 }
 #Tomato #Work .Land .working {
   width: 90%;
   height: 50px;
+  margin: 0px;
   background: #bcf8a9;
   border: 3px solid #267e0a;
 }
 #Tomato #Work .Land .relax {
   width: 90%;
   height: 50px;
+  margin: 0px;
   background: #ffb787;
   border: 3px solid #6d2c00;
 }
