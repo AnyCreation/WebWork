@@ -22,9 +22,9 @@ addTime.addEventListener("click", function() {
 const start = document.getElementById("Start");
 start.addEventListener("click", function() {
     var times = document.getElementsByClassName("timePlace");
+
     var lastIndex = times.length;
     var now = 0;
-    console.log(lastIndex)
     var flag = false;
 
     let Interval = setInterval(function () {
@@ -35,7 +35,7 @@ start.addEventListener("click", function() {
         if (lastIndex - now == 0) {
             clearInterval(Interval)
         }
-    }, 250);
+    }, 1000);
 })
 
 function S(index) {
