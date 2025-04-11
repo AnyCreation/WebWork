@@ -42,7 +42,7 @@ start.addEventListener("click", function() {
             if (lastIndex - now === 0) {
                 clearInterval(Interval)
             }
-        }, 1000);
+        }, 4000);
     } else {
         runing = true;
     }
@@ -56,6 +56,6 @@ function S(index) {
         return true;
     }
 
-    Real.setAttribute("style", `width: ${W - 0.25}px`)
+    Real.setAttribute("style", `width: ${W - 1}px`)
 }
 
