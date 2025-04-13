@@ -11,6 +11,7 @@
   flex-direction: column;
   width: 50vw;
   height: 90vh;
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.658);
 }
 #Tomato #Work {
   display: flex;
