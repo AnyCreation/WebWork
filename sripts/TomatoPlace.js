@@ -1,7 +1,5 @@
 // ---tomato
 
-// 1 min - one "\"
-
 /// Add line |------------------------------------------------
 
 const minS = document.getElementById("time");
@@ -18,14 +16,17 @@ addTime.addEventListener("click", function() {
 });
 
 
-/// Start |------------------------------------------------
+/// ------------------------------------------------
 const start = document.getElementById("Start");
 const stoping = document.getElementById("Stop");
 
+
 var runing = true;
+/// Stop |------------------------------------------------
 stoping.addEventListener("click", function() {
     runing = false;
 });
+/// Start |------------------------------------------------
 start.addEventListener("click", function() {
     if (runing) { // chacking if interval was create before
         var times = document.getElementsByClassName("timePlace");
