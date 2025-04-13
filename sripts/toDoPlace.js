@@ -75,6 +75,7 @@ document.getElementById("AddTast").addEventListener("click", function() {
 
 
 
+Update();
 function Update() {
     // Update the clock
     d = new Date();
